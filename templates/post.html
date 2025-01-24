@@ -3,6 +3,5 @@
 <h1>{{ post.title }}</h1>
 <p>{{ post.content }}</p>
 <p class="card-text"><small class="text-muted">Posted on: {{ post.created_at.strftime('%B %d, %Y %H:%M') }}</small></p>
-<a href="{{ url_for('edit_post', id=post.id) }}" class="btn btn-warning">Edit</a>
-<a href="{{ url_for('delete_post', id=post.id) }}" class="btn btn-danger">Delete</a>
 {% endblock %}
+
